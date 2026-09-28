@@ -1,6 +1,8 @@
 target/
 .idea/
-submissions/*
+submissions/*/target/
+submissions/*/build/
+submissions/*/out/
 !submissions/.gitkeep
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

@@ -54,7 +54,7 @@ public class App {
         Optional<AssignmentProfile> profile = new AssignmentRegistry().find(arguments.get("assignment"));
         if (profile.isEmpty()) {
             System.err.println("Unknown assignment: " + arguments.get("assignment")
-                    + " (registered: payroll)");
+                    + " (registered: payroll, inventory)");
         }
         return profile;
     }

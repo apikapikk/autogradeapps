@@ -4,8 +4,9 @@ import java.util.Optional;
 import java.util.Set;
 
 public class AssignmentRegistry {
-    private final Map<String, AssignmentProfile> profiles =
-            Map.of("payroll", new PayrollProfile());
+    private final Map<String, AssignmentProfile> profiles = Map.of(
+            "payroll", new PayrollProfile(),
+            "inventory", new InventoryProfile());
 
     public Optional<AssignmentProfile> find(String name) {
         return Optional.ofNullable(profiles.get(name));
